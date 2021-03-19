@@ -1,0 +1,8 @@
+[2021-03-19 08:00:32] docker.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "migrate" is not defined. in /var/www/html/vendor/symfony/console/Application.php:651
+Stack trace:
+#0 /var/www/html/vendor/symfony/console/Application.php(236): Symfony\Component\Console\Application->find('migrate')
+#1 /var/www/html/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(88): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/html/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
